@@ -13,7 +13,7 @@ const name1 = userName();
 
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 const random = () => {
-  const var1 = Math.round(Math.random() * 100);
+  const var1 = Math.floor(Math.random() * 100) + 1;
   return var1;
 };
 
@@ -23,7 +23,7 @@ let correctAnswers = 0;
 
 while (correctAnswers < 3) {
   const randomNumber = random();
-  console.log('Question: ', random());
+  console.log('Question: ', randomNumber);
   const yesNo = readlineSync.question('Your answer: ');
   const correct = isEven(randomNumber) ? 'yes' : 'no';
   const isYesNo = yesNo === correct;
@@ -32,7 +32,8 @@ while (correctAnswers < 3) {
     console.log('Correct!');
     correctAnswers += 1;
   } else {
-    console.log(`'${yesNo}' is a wrong answer ;(. Correct answer was '${correct}. Let\`s try again, ${name1}!`);
+    console.log(`'${yesNo}' is a wrong answer ;(. Correct answer was ${correct}. Let's try again, ${name1}!`);
+    correctAnswers = 0;
   }
 }
 
