@@ -1,0 +1,40 @@
+#!/usr/bin/env node
+import readlineSync from 'readline-sync';
+
+console.log('Welcome to the Brain Games!');
+
+const userName = () => {
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!`);
+  return name;
+};
+
+const name1 = userName();
+
+console.log('Answer "yes" if the number is even, otherwise answer "no".');
+const random = () => {
+  const var1 = Math.round(Math.random() * 100);
+  return var1;
+};
+
+const isEven = (number) => number % 2 === 0;
+
+let correctAnswers = 0;
+
+while (correctAnswers < 3) {
+  const randomNumber = random();
+  console.log('Question: ', random());
+  const yesNo = readlineSync.question('Your answer: ');
+  const correct = isEven(randomNumber) ? 'yes' : 'no';
+
+  if (correct === yesNo) {
+    console.log('Correct!');
+    correctAnswers += 1;
+  } else {
+    console.log(`'${yesNo}' is a wrong answer ;(. Correct answer was '${correct}. Let\`s try again, ${name1}!`);
+  }
+}
+
+if (correctAnswers === 3) {
+  console.log(`Congratulations, ${name1}!`);
+}
