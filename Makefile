@@ -7,8 +7,8 @@ publish:
 lint:
 	npx eslint .
 brain-even:
-	node games/brain-even.js
+	node bin/games/brain-even.js
 brain-calc:
-	node games/brain-calc.js
+	node bin/games/brain-calc.js
 game-start:
 	node src/index.js
