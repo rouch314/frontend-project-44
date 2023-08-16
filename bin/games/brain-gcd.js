@@ -46,7 +46,7 @@ const runGameGcd = () => {
     const randomNumber2 = randomNumber();
 
     const greatestCommonDivisor = CommonDivisor(randomNumber1, randomNumber2);
-    console.log('!!!!!', greatestCommonDivisor);
+    console.log('!!!!!', greatestCommonDivisor, '<-- подсказка, чтобы быстрее тестить');
     console.log('Question: ', randomNumber1, randomNumber2);
 
     const userAnswer = readlineSync.question('Your answer: ');
