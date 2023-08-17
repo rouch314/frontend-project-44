@@ -11,3 +11,6 @@ https://asciinema.org/a/FZd5EYzTuV6Igxm22CLfEiEVW
 
 // ЭТАП 7:
 https://asciinema.org/a/h5vKWb43pGwprG9VWX2Q4eSBd
+
+//ЭТАП 8:
+https://asciinema.org/a/FZ1Yx6GfuBPAN5h8qVaqzgO2V

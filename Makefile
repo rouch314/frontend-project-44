@@ -14,3 +14,5 @@ brain-gcd:
 	node bin/games/brain-gcd.js
 game-start:
 	node src/index.js
+brain-progression:
+	node bin/games/brain-progression.js
