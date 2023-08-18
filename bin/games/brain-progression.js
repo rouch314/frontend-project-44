@@ -20,7 +20,7 @@ const runGameProgression = () => {
   };
 
   const progression = () => {
-    const startNum = randomNumber(0, 20);
+    const startNum = randomNumber(0, 100);
     const step = randomNumber(1, 10);
     const missing = randomNumber(0, 9);
 

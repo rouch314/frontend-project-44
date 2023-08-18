@@ -16,3 +16,5 @@ game-start:
 	node src/index.js
 brain-progression:
 	node bin/games/brain-progression.js
+brain-prime:
+	node bin/games/brain-prime.js
