@@ -46,7 +46,7 @@ while (correctAnswers < 3) {
   const randomNumber2 = randomNumber();
 
   const greatestCommonDivisor = CommonDivisor(randomNumber1, randomNumber2);
-  console.log('Question: ', randomNumber1, randomNumber2);
+  console.log('Question:', randomNumber1, randomNumber2);
 
   const userAnswer = readlineSync.question('Your answer: ');
 

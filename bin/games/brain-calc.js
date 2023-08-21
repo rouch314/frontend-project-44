@@ -48,7 +48,7 @@ while (correctAnswers < 3) {
   };
   const result1 = equationResult();
 
-  console.log('Question: ', expression1);
+  console.log('Question:', expression1);
   const userAnswer = readlineSync.question('Your answer: ');
   const isYesNo = parseInt(userAnswer, 10) === result1;
   if (isYesNo) {

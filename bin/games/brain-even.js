@@ -25,7 +25,7 @@ let correctAnswers = 0;
 
 while (correctAnswers < 3) {
   const randomNumber = random();
-  console.log('Question: ', randomNumber);
+  console.log('Question:', randomNumber);
   const yesNo = readlineSync.question('Your answer: ');
   const correct = isEven(randomNumber) ? 'yes' : 'no';
   const isYesNo = yesNo === correct;

@@ -44,7 +44,7 @@ let correctAnswers = 0;
 while (correctAnswers < 3) {
   const [progressionArr, correctAnswer] = progression();
 
-  console.log('Question: ', progressionArr);
+  console.log('Question:', progressionArr);
 
   const userAnswer = readlineSync.question('Your answer: ');
   const YesNo = parseInt(userAnswer, 10) === correctAnswer;

@@ -36,7 +36,7 @@ while (correctAnswers < 3) {
   const numberGiven = randomNumber();
   const numDivider = primeNumDivider(numberGiven);
 
-  console.log('Question: ', numberGiven);
+  console.log('Question:', numberGiven);
 
   const userAnswer = readlineSync.question('Your answer: ');
 
