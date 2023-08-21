@@ -18,3 +18,7 @@ https://asciinema.org/a/FZ1Yx6GfuBPAN5h8qVaqzgO2V
 
 // ЭТАП 9:
 https://asciinema.org/a/QirMPNVRnwBdeU7JVhFNsaBfV
+
+
+ИТОГ:
+https://asciinema.org/a/ZeJY5mx20czztmS4Q4GT86Q3W
