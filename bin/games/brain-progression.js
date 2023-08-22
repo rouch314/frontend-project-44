@@ -33,7 +33,7 @@ const progression = () => {
       arr1.push(startNum + i * step);
     }
   }
-  const progressionArr = arr1.join(', ');
+  const progressionArr = arr1.join(' ');
   const correctAnswer = startNum + step * missing;
 
   return [progressionArr, correctAnswer];
