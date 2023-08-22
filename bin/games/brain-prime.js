@@ -47,7 +47,7 @@ while (correctAnswers < 3) {
     correctAnswers += 1;
   } else {
     console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${numDivider}'.`);
-    console.log(`Let's try again, ${name5}`);
+    console.log(`Let's try again, ${name5}!`);
     correctAnswers = 0;
     break;
   }
