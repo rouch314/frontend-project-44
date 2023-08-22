@@ -63,7 +63,7 @@ while (correctAnswers < 3) {
   }
 }
 if (correctAnswers === 3) {
-  console.log(`Congratulations, ${name3}`);
+  console.log(`Congratulations, ${name3}!`);
 }
 // };
 
