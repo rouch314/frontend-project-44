@@ -59,6 +59,7 @@ while (correctAnswers < 3) {
     console.log(`'${parseInt(userAnswer, 10)}' is wrong answer ;(. Correct answer was '${greatestCommonDivisor}'.`);
     console.log(`Let's try again, ${name3}!`);
     correctAnswers = 0;
+    break;
   }
 }
 if (correctAnswers === 3) {

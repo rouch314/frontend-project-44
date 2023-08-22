@@ -57,6 +57,7 @@ while (correctAnswers < 3) {
     console.log(`Let's try again, ${name4}!`);
 
     correctAnswers = 0;
+    break;
   }
 }
 

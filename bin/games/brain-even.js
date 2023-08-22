@@ -36,6 +36,7 @@ while (correctAnswers < 3) {
   } else {
     console.log(`'${yesNo}' is a wrong answer ;(. Correct answer was ${correct}. Let's try again, ${name1}!`);
     correctAnswers = 0;
+    break;
   }
 }
 
