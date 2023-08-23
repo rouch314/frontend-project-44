@@ -3,7 +3,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/b96d860d60246f00f7b0/maintainability)](https://codeclimate.com/github/rouch314/frontend-project-44/maintainability)
 
 <h1>Brain games</h1>
-<h2>First <a href="https://github.com/rouch314/" target="_blank">Rouch314`s</a></h2> project on <a href="https://hexlet.io" target="_blank">Hexlet</a></h2>
+<h2>First <a href="https://github.com/rouch314/" target="_blank">Rouch314`s</a> project on <a href="https://hexlet.io" target="_blank">Hexlet</a></h2>
 <h3>What the game does:</h3>
 <p> You are given with a set of <b>five</b> mathematical games of varying difficulty./n You must answer correctly the given task. If you are wrong - you are free to start over again.
 <ul><h4>List of games:</h4>
@@ -21,7 +21,7 @@
 make brain-games
 ```
 
-## Every game launches with <**make**_*game name*>, e.g.:
+## Every game launches with "*make game_name*", e.g.:
 
 ```bash
 make brain-prime
@@ -31,22 +31,18 @@ make brain-prime
 ## Asccinema demo
 
 ### brain-even
-<!-- more -->
 [![](https://asciinema.org/a/604269.svg)](https://asciinema.org/a/604269)
 
 ### brain-calc
-<!-- more -->
-[![](https://asciinema.org/a/604270.svg)](https://asciinema.org/a/604270)
+[link to asciinema](https://asciinema.org/a/604270)
 
 ### brain-gcd
-<!-- more -->
-[![asciicast](https://asciinema.org/a/604271.svg)](https://asciinema.org/a/604271)
+
+[link to asciinema](https://asciinema.org/a/604271)
 
 ### brain-progression
-<!-- more -->
-[![asciicast](https://asciinema.org/a/604272.svg)](https://asciinema.org/a/604272)
+[link to asciinema](https://asciinema.org/a/604272)
 
 ### brain-prime
-<!-- more -->
-[![asciicast](https://asciinema.org/a/604273.svg)](https://asciinema.org/a/604273)
+[link to asciinema](https://asciinema.org/a/604273)
 
