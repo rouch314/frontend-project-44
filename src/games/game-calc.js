@@ -1,10 +1,11 @@
 import gameLogic from '../index.js';
+import randomNumber from '../randon-number.js';
 
 const startGame = () => {
-  const randomNumber = () => {
-    const varDigit1 = Math.floor(Math.random() * 100) + 1;
-    return varDigit1;
-  };
+  // const randomNumber = () => {
+  // const varDigit1 = Math.floor(Math.random() * 100) + 1;
+  // return varDigit1;
+  // };
   const randomOperator = () => {
     const operators = ['+', '-', '*'];
     const varDigit2 = Math.floor(Math.random() * operators.length);

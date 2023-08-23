@@ -1,10 +1,11 @@
 import gameLogic from '../index.js';
+import randomNumber from '../randon-number.js';
 
 const startGame = () => {
-  const randomNumber = () => {
-    const var1 = Math.floor(Math.random() * 100) + 1;
-    return var1;
-  };
+  // const randomNumber = () => {
+  // const var1 = Math.floor(Math.random() * 100) + 1;
+  // return var1;
+  // };
 
   const CommonDivisor = (randomNumber1, randomNumber2) => {
     const arrResult1 = [];

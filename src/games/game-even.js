@@ -1,12 +1,13 @@
 import gameLogic from '../index.js';
+import randomNumber from '../randon-number.js';
 
 const isEven = (number) => number % 2 === 0;
 
 const startgame = () => {
-  const randomNumber = () => {
-    const var1 = Math.floor(Math.random() * 100) + 1;
-    return var1;
-  };
+  // const randomNumber = () => {
+  // const var1 = Math.floor(Math.random() * 100) + 1;
+  // return var1;
+  // };
   const question = randomNumber();
   const answer = isEven(question) ? 'yes' : 'no';
   return [question, answer];

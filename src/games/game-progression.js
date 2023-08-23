@@ -1,10 +1,11 @@
 import gameLogic from '../index.js';
+import randomNumber from '../randon-number.js';
 
 const startGame = () => {
-  const randomNumber = (min, max) => {
-    const varDigit = Math.floor(Math.random() * (max - min)) + min;
-    return varDigit;
-  };
+  // const randomNumber = (min, max) => {
+  // const varDigit = Math.floor(Math.random() * (max - min)) + min;
+  // return varDigit;
+  // };
   const progression = () => {
     const startNum = randomNumber(0, 100);
     const step = randomNumber(1, 10);
