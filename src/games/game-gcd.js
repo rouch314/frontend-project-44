@@ -27,7 +27,7 @@ const startGame = () => {
   };
   const randomNumber1 = randomNumber();
   const randomNumber2 = randomNumber();
-  const question = `${randomNumber1}, ${randomNumber2}`;
+  const question = `${randomNumber1} ${randomNumber2}`;
 
   const answer = String(CommonDivisor(randomNumber1, randomNumber2));
   return [question, answer];
