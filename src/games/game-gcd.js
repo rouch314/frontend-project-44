@@ -2,11 +2,6 @@ import gameLogic from '../index.js';
 import randomNumber from '../randon-number.js';
 
 const startGame = () => {
-  // const randomNumber = () => {
-  // const var1 = Math.floor(Math.random() * 100) + 1;
-  // return var1;
-  // };
-
   const CommonDivisor = (randomNumber1, randomNumber2) => {
     const arrResult1 = [];
     const arrResult2 = [];
@@ -33,11 +28,8 @@ const startGame = () => {
   const answer = String(CommonDivisor(randomNumber1, randomNumber2));
   return [question, answer];
 };
-
 const description = 'Find the greatest common divisor of given numbers.';
-
 const runGameGcd = () => {
   gameLogic(description, startGame);
 };
-
 export default runGameGcd;

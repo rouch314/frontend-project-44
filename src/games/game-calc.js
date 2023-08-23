@@ -2,23 +2,16 @@ import gameLogic from '../index.js';
 import randomNumber from '../randon-number.js';
 
 const startGame = () => {
-  // const randomNumber = () => {
-  // const varDigit1 = Math.floor(Math.random() * 100) + 1;
-  // return varDigit1;
-  // };
   const randomOperator = () => {
     const operators = ['+', '-', '*'];
     const varDigit2 = Math.floor(Math.random() * operators.length);
     return operators[varDigit2];
   };
-
   const dig1 = randomNumber();
   const dig2 = randomNumber();
   const oper1 = randomOperator();
-
   const randomExpression = () => `${dig1} ${oper1} ${dig2}`;
   const question = randomExpression();
-
   const equationResult = () => {
     let result;
     if (oper1 === '+') {
@@ -34,11 +27,8 @@ const startGame = () => {
 
   return [question, answer];
 };
-
 const description = 'What is the result of the expression?';
-
 const runGameCalc = () => {
   gameLogic(description, startGame);
 };
-
 export default runGameCalc;
