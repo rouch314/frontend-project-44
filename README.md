@@ -46,3 +46,4 @@ make brain-prime
 ### brain-prime
 [link to asciinema](https://asciinema.org/a/604273)
 
+## Have a good time & good luck!
