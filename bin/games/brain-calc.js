@@ -1,7 +1,9 @@
 #!/usr/bin/env node
-import readlineSync from 'readline-sync';
-// import userName from '../../src/cli.js';
+import runGameCalc from '../../src/games/game-calc.js';
 
+runGameCalc();
+
+/*
 const userName = () => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
@@ -62,7 +64,7 @@ while (correctAnswers < 3) {
 }
 if (correctAnswers === 3) {
   console.log(`Congratulations, ${name2}!`);
-}
 // };
 
 // export default runGameCalc;
+*/
