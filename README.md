@@ -2,23 +2,51 @@
 [![Actions Status](https://github.com/rouch314/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/rouch314/frontend-project-44/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/b96d860d60246f00f7b0/maintainability)](https://codeclimate.com/github/rouch314/frontend-project-44/maintainability)
 
-*ссылки на аскинему* 
+<h1>Brain games</h1>
+<h2>First <a href="https://github.com/rouch314/" target="_blank">Rouch314`s</a></h2> project on <a href="https://hexlet.io" target="_blank">Hexlet</a></h2>
+<h3>What the game does:</h3>
+<p> You are given with a set of <b>five</b> mathematical games of varying difficulty./n You must answer correctly the given task. If you are wrong - you are free to start over again.
+<ul><h4>List of games:</h4>
+ <li>brain-even;</li>
+ <li>brain-calculator;</li>
+ <li>brain-gcd;</li>
+ <li>brain-progression;</li>
+ <li>brain-prime.</li>
+</ul>
 
-// ЭТАП 5:
-https://asciinema.org/a/m4SIK4Y4kvesMk8qxYwgbFAdl
+---
 
-// ЭТАП 6:
-https://asciinema.org/a/FZd5EYzTuV6Igxm22CLfEiEVW
+## Launch
+```bash
+make brain-games
+```
 
-// ЭТАП 7:
-https://asciinema.org/a/h5vKWb43pGwprG9VWX2Q4eSBd
+## Every game launches with <**make**_*game name*>, e.g.:
 
-// ЭТАП 8:
-https://asciinema.org/a/FZ1Yx6GfuBPAN5h8qVaqzgO2V
+```bash
+make brain-prime
+```
+[![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/assets/master/images/hexlet_logo128.png)](https://hexlet.io/?utm_source=github&utm_medium=link&utm_campaign=nodejs-package)
 
-// ЭТАП 9:
-https://asciinema.org/a/QirMPNVRnwBdeU7JVhFNsaBfV
+## Asccinema demo
 
+### brain-even
+<!-- more -->
+[![](https://asciinema.org/a/604269.svg)](https://asciinema.org/a/604269)
 
-ИТОГ:
-https://asciinema.org/a/ZeJY5mx20czztmS4Q4GT86Q3W
+### brain-calc
+<!-- more -->
+[![](https://asciinema.org/a/604270.svg)](https://asciinema.org/a/604270)
+
+### brain-gcd
+<!-- more -->
+[![asciicast](https://asciinema.org/a/604271.svg)](https://asciinema.org/a/604271)
+
+### brain-progression
+<!-- more -->
+[![asciicast](https://asciinema.org/a/604272.svg)](https://asciinema.org/a/604272)
+
+### brain-prime
+<!-- more -->
+[![asciicast](https://asciinema.org/a/604273.svg)](https://asciinema.org/a/604273)
+
