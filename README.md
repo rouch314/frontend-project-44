@@ -5,7 +5,8 @@
 <h1>Brain games</h1>
 <h2>First <a href="https://github.com/rouch314/" target="_blank">Rouch314`s</a> project on <a href="https://hexlet.io" target="_blank">Hexlet</a></h2>
 <h3>What the game does:</h3>
-<p> You are given with a set of <b>five</b> mathematical games of varying difficulty./n You must answer correctly the given task. If you are wrong - you are free to start over again.
+<p> You are given with a set of <b>five</b> mathematical games of varying difficulty. 
+<p> Answer correctly the given task and if you anaswer wrong - feel free to start over again.
 <ul><h4>List of games:</h4>
  <li>brain-even;</li>
  <li>brain-calculator;</li>
