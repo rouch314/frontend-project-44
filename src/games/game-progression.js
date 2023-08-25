@@ -6,6 +6,7 @@ const generateRoundData = () => {
     const startNum = randomNumber(0, 100);
     const step = randomNumber(1, 10);
     const missing = randomNumber(0, 9);
+
     const arr1 = [];
 
     for (let i = 0; i < 10; i += 1) {
