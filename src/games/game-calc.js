@@ -1,34 +1,41 @@
 import gameLogic from '../index.js';
-import randomNumber from '../randon-number.js';
+import generateRandomNumber from '../randon-number.js';
 
-const startGame = () => {
+const operators = ['+', '-', '*'];
+
+const equationResult = (dig1, dig2, oper) => {
+  switch (oper) {
+    case '+':
+      return dig1 + dig2;
+    case '-':
+      return dig1 - dig2;
+    case '*':
+      return dig1 * dig2;
+    default:
+      return 'unknown operator!';
+  }
+};
+
+const generateRoundData = () => {
   const randomOperator = () => {
-    const operators = ['+', '-', '*'];
-    const varDigit2 = Math.floor(Math.random() * operators.length);
-    return operators[varDigit2];
+    const generateRandomOperator = generateRandomNumber(0, 2);
+    return operators[generateRandomOperator];
   };
-  const dig1 = randomNumber();
-  const dig2 = randomNumber();
-  const oper1 = randomOperator();
-  const randomExpression = () => `${dig1} ${oper1} ${dig2}`;
-  const question = randomExpression();
-  const equationResult = () => {
-    let result;
-    if (oper1 === '+') {
-      result = dig1 + dig2;
-    } else if (oper1 === '-') {
-      result = dig1 - dig2;
-    } else {
-      result = dig1 * dig2;
-    }
-    return result;
-  };
-  const answer = String(equationResult());
+
+  const digit1 = generateRandomNumber(0, 100);
+  const digit2 = generateRandomNumber(0, 100);
+  const operator = randomOperator();
+
+  const question = `${digit1} ${operator} ${digit2}`;
+
+  const answer = String(equationResult(digit1, digit2, operator));
 
   return [question, answer];
 };
 const description = 'What is the result of the expression?';
+
 const runGameCalc = () => {
-  gameLogic(description, startGame);
+  gameLogic(description, generateRoundData);
 };
+
 export default runGameCalc;

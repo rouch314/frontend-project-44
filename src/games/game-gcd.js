@@ -1,10 +1,11 @@
 import gameLogic from '../index.js';
-import randomNumber from '../randon-number.js';
+import generateRandomNumber from '../randon-number.js';
 
-const startGame = () => {
-  const CommonDivisor = (randomNumber1, randomNumber2) => {
+const generateRoundData = () => {
+  const commonDivisor = (randomNumber1, randomNumber2) => {
     const arrResult1 = [];
     const arrResult2 = [];
+
     for (let i = 1; i <= randomNumber1; i += 1) {
       if (randomNumber1 % i === 0) {
         arrResult1.push(i);
@@ -15,21 +16,27 @@ const startGame = () => {
         arrResult2.push(j);
       }
     }
+
     const findDivisor = (arr1, arr2) => {
       const commonDivisors = arr1.filter((digit) => arr2.includes(digit));
+
       return Math.max(...commonDivisors);
     };
+
     return findDivisor(arrResult1, arrResult2);
   };
-  const randomNumber1 = randomNumber();
-  const randomNumber2 = randomNumber();
-  const question = `${randomNumber1} ${randomNumber2}`;
 
-  const answer = String(CommonDivisor(randomNumber1, randomNumber2));
+  const randomNumber1 = generateRandomNumber(1, 100);
+  const randomNumber2 = generateRandomNumber(1, 100);
+  const question = `${randomNumber1} ${randomNumber2}`;
+  const answer = String(commonDivisor(randomNumber1, randomNumber2));
   return [question, answer];
 };
+
 const description = 'Find the greatest common divisor of given numbers.';
+
 const runGameGcd = () => {
-  gameLogic(description, startGame);
+  gameLogic(description, generateRoundData);
 };
+
 export default runGameGcd;

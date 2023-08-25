@@ -1,14 +1,17 @@
 import gameLogic from '../index.js';
-import randomNumber from '../randon-number.js';
+import generateRandomNumber from '../randon-number.js';
 
 const isEven = (number) => number % 2 === 0;
-const startgame = () => {
-  const question = randomNumber();
+
+const generateRoundData = () => {
+  const question = generateRandomNumber(1, 100);
   const answer = isEven(question) ? 'yes' : 'no';
   return [question, answer];
 };
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
+
 const runGameEven = () => {
-  gameLogic(description, startgame);
+  gameLogic(description, generateRoundData);
 };
+
 export default runGameEven;
