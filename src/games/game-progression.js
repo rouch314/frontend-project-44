@@ -1,28 +1,26 @@
 import gameLogic from '../index.js';
 import randomNumber from '../randon-number.js';
 
+const progression = (startNum, step, length) => {
+  const arrayNumbers = [startNum];
+
+  for (let i = 1; i < length; i += 1) {
+    arrayNumbers.push(startNum + (step * i));
+  }
+
+  return arrayNumbers;
+};
+
 const generateRoundData = () => {
-  const progression = () => {
-    const startNum = randomNumber(0, 100);
-    const step = randomNumber(1, 10);
-    const missing = randomNumber(0, 9);
+  const startNum = randomNumber(0, 100);
+  const step = randomNumber(1, 10);
+  const getProgression = progression(startNum, step, 10);
+  const hiddenIndex = randomNumber(0, getProgression.length);
+  const answer = String(getProgression[hiddenIndex]);
 
-    const arr1 = [];
+  getProgression[hiddenIndex] = '..';
 
-    for (let i = 0; i < 10; i += 1) {
-      if (i === missing) {
-        arr1.push('..');
-      } else {
-        arr1.push(startNum + i * step);
-      }
-    }
-
-    const progressionArr = arr1.join(' ');
-    const correctAnswer = String(startNum + step * missing);
-    return [progressionArr, correctAnswer];
-  };
-
-  const [question, answer] = progression();
+  const question = getProgression.join(' ');
   return [question, answer];
 };
 

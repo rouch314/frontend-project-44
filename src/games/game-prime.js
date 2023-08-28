@@ -1,22 +1,18 @@
 import gameLogic from '../index.js';
 import generateRandomNumber from '../randon-number.js';
 
-const generateRoundData = () => {
-  const primeNumDivider = (dig) => {
-    let countDivider = 0;
-
-    for (let i = 2; i <= dig; i += 1) {
-      if (dig % i === 0) {
-        countDivider += 1;
-      }
+const isPrime = (number) => {
+  for (let i = 2; i < number; i += 1) {
+    if (number % i === 0) {
+      return false;
     }
+  }
+  return true;
+};
 
-    const isPrime = countDivider < 2 ? 'yes' : 'no';
-    return isPrime;
-  };
-
+const generateRoundData = () => {
   const question = generateRandomNumber(1, 100);
-  const answer = primeNumDivider(question);
+  const answer = isPrime(question) ? 'yes' : 'no';
   return [question, answer];
 };
 
