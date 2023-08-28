@@ -23,4 +23,3 @@ const gameLogic = (description, generateRoundData) => {
   console.log(`Congratulations, ${name}!`);
 };
 export default gameLogic;
-// comment
