@@ -1,5 +1,5 @@
-import gameLogic from '../index.js';
-import randomNumber from '../randon-number.js';
+import startGameEngine from '../index.js';
+import randomNumber from '../random-number.js';
 
 const progression = (startNum, step, length) => {
   const arrayNumbers = [startNum];
@@ -27,7 +27,7 @@ const generateRoundData = () => {
 const description = 'What number is missing in the progression?';
 
 const runGameProgression = () => {
-  gameLogic(description, generateRoundData);
+  startGameEngine(description, generateRoundData);
 };
 
 export default runGameProgression;

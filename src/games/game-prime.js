@@ -1,7 +1,10 @@
-import gameLogic from '../index.js';
-import generateRandomNumber from '../randon-number.js';
+import startGameEngine from '../index.js';
+import generateRandomNumber from '../random-number.js';
 
 const isPrime = (number) => {
+  if (number < 2) {
+    return false;
+  }
   for (let i = 2; i < number; i += 1) {
     if (number % i === 0) {
       return false;
@@ -19,7 +22,7 @@ const generateRoundData = () => {
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const runGamePrime = () => {
-  gameLogic(description, generateRoundData);
+  startGameEngine(description, generateRoundData);
 };
 
 export default runGamePrime;

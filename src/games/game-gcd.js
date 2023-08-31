@@ -1,13 +1,12 @@
-import gameLogic from '../index.js';
-import generateRandomNumber from '../randon-number.js';
+import startGameEngine from '../index.js';
+import generateRandomNumber from '../random-number.js';
 
 const greatestCommonDivisor = (number1, number2) => {
   if (number2 === 0) {
     return number1;
   }
   return greatestCommonDivisor(number2, number1 % number2);
-}; // пришлось, конечно, подсмотреть, как применить алгоритм Евклида для НОД.
-// Как я понял, можно решить через цикл или через рекурсию. Вроде получилось через рекурсию.
+};
 
 const generateRoundData = () => {
   const randomNumber1 = generateRandomNumber(1, 100);
@@ -20,7 +19,7 @@ const generateRoundData = () => {
 const description = 'Find the greatest common divisor of given numbers.';
 
 const runGameGcd = () => {
-  gameLogic(description, generateRoundData);
+  startGameEngine(description, generateRoundData);
 };
 
 export default runGameGcd;
