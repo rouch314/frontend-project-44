@@ -1,26 +1,27 @@
 import startGameEngine from '../index.js';
 import randomNumber from '../random-number.js';
 
-const progression = (startNum, step, length) => {
-  const arrayNumbers = [startNum];
+const getProgression = (startNum, step, length) => {
+  const array = [startNum];
 
   for (let i = 1; i < length; i += 1) {
-    arrayNumbers.push(startNum + (step * i));
+    array.push(startNum + (step * i));
   }
 
-  return arrayNumbers;
+  return array;
 };
 
 const generateRoundData = () => {
   const startNum = randomNumber(0, 100);
   const step = randomNumber(1, 10);
-  const getProgression = progression(startNum, step, 10);
-  const hiddenIndex = randomNumber(0, getProgression.length);
-  const answer = String(getProgression[hiddenIndex]);
+  const length = 10;
+  const progression = getProgression(startNum, step, length);
+  const hiddenIndex = randomNumber(0, (progression.length - 1));
+  const answer = String(progression[hiddenIndex]);
 
-  getProgression[hiddenIndex] = '..';
+  progression[hiddenIndex] = '..';
 
-  const question = getProgression.join(' ');
+  const question = progression.join(' ');
   return [question, answer];
 };
 

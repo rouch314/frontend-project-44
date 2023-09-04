@@ -17,8 +17,8 @@ const calculate = (number1, number2, operator) => {
 };
 
 const generateRoundData = () => {
-  const generateRandomOperator = generateRandomNumber(0, (operators.length - 1));
-  const operator = operators[generateRandomOperator];
+  const randomIndex = generateRandomNumber(0, (operators.length - 1));
+  const operator = operators[randomIndex];
 
   const randomNumber1 = generateRandomNumber(0, 100);
   const randomNumber2 = generateRandomNumber(0, 100);
